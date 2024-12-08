@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SegEscController">
+   <children>
+		<Button fx:id="ButtonGrabar" contentDisplay="CENTER" layoutX="433.0" layoutY="63.0" mnemonicParsing="false" onAction="#GrabarEmp" text="Grabar Empleado" />
+		<TextField fx:id="TextField1" layoutX="114.0" layoutY="124.0" />
+		<TextField fx:id="TextField2" layoutX="114.0" layoutY="168.0" />
+		<TextField fx:id="TextField3" layoutX="114.0" layoutY="213.0" />
+		<Label layoutX="30.0" layoutY="219.0" text="Sexo (M o F)" />
+		<Label layoutX="335.0" layoutY="128.0" text="Salario" />
+		<TextField fx:id="TextField4" layoutX="386.0" layoutY="123.0" />
+		<Label layoutX="321.0" layoutY="173.0" text="Comision" />
+		<TextField fx:id="TextField5" layoutX="386.0" layoutY="168.0" />
+		<TextField fx:id="TextField6" layoutX="386.0" layoutY="214.0" />
+		<Label layoutX="25.0" layoutY="263.0" text="Fecha de Nacimiento" />
+		<Label layoutX="318.0" layoutY="307.0" text="Id de Jefe Inmediato" />
+		<Label layoutX="312.0" layoutY="262.0" text="Codigo Departamento" />
+		<Label layoutX="337.0" layoutY="219.0" text="Cargo" />
+		<Label layoutX="19.0" layoutY="307.0" text="Fecha de Incorporacion" />
+		<DatePicker fx:id="DatePicker2" layoutX="152.0" layoutY="301.0" prefHeight="26.0" prefWidth="142.0" />
+		<DatePicker fx:id="DatePicker1" layoutX="152.0" layoutY="257.0" prefHeight="26.0" prefWidth="142.0" />
+		<Button fx:id="ButtonSalir" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#Salir" text="&lt;- Salir" />
+      	<Label layoutX="48.0" layoutY="62.0" text="Informacion de nuevo empleado" underline="true">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      	<Label layoutX="25.0" layoutY="128.0" text="DNI Empleado" />
+      	<Label layoutX="60.0" layoutY="173.0" text="Nombre" />
+      <ComboBox fx:id="codDept" layoutX="445.0" layoutY="257.0" onAction="#ClickcmbDept" prefHeight="26.0" prefWidth="121.0" />
+      <TextField fx:id="jefID" editable="false" layoutX="445.0" layoutY="303.0" prefHeight="26.0" prefWidth="121.0" />
+	</children>
+</AnchorPane>
