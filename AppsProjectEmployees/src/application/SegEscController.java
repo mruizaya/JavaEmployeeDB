@@ -148,7 +148,7 @@ public class SegEscController {
 	        Stage stage = new Stage();
 	        stage.setScene(scene);
 	        stage.show();
-
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 	        // Close the current window
 	        Stage currentStage = (Stage) ButtonSalir.getScene().getWindow();
 	        currentStage.close();

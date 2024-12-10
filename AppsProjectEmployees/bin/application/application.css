@@ -1,1 +1,122 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* AnchorPane styling */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #4ca1af);
+    -fx-padding: 20px; /* Padding for inner spacing */
+}
+
+#TitleLabel {
+    -fx-font-size: 22px;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: #000000;
+    -fx-padding: 5px; /* Adds space around the label text */
+}
+
+/* Label styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: #000000;
+    -fx-padding: 5px; /* Adds space around the label text */
+}
+
+/* Headline label */
+.label[underline="true"] {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f1c40f;
+    -fx-padding: 10px 0; /* Vertical padding for better spacing */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 5, 0.2, 2, 2);
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8px; /* Inner padding for text fields */
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Button styling */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #16a085, #2ecc71);
+    -fx-background-radius: 8;
+    -fx-border-color: white;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-padding: 8px 16px; /* Adds padding inside the button */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0, 2, 2);
+    -fx-cursor: hand;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #2ecc71, #16a085);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 12, 0, 3, 3);
+}
+
+/* Button pressed effect */
+.button:pressed {
+    -fx-background-color: #1abc9c;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* DatePicker styling */
+.date-picker {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #e67e22;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-padding: 8px; /* Inner padding for consistency */
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* ComboBox styling */
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #8e44ad;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-padding: 8px; /* Inner padding for consistency */
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.5, 0, 1);
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #16a085, #2ecc71);
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #2E7D32;
+    -fx-padding: 5;
+}
+
+.table-view .cell {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-border-color: #ddd;
+}
+
+/* Highlight selected rows in TableView */
+.table-view .cell:selected {
+    -fx-background-color: linear-gradient(to bottom, #6fb2ed, #45a8ff);
+    -fx-text-fill: black;
+}

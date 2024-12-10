@@ -32,6 +32,7 @@ public class PrimEscController {
 			Stage stage= new Stage();
 		    stage.setScene(scene);
 		    stage.show();
+		    scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		    Stage currentStage = (Stage) Button1.getScene().getWindow();
 	        currentStage.close();
 		 } catch (IOException e) {
@@ -53,6 +54,7 @@ public class PrimEscController {
 			Stage stage= new Stage();
 		    stage.setScene(scene);
 		    stage.show();
+		    scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		    Stage currentStage = (Stage) Button2.getScene().getWindow();
 	        currentStage.close();
 		 } catch (IOException e) {

@@ -26,9 +26,9 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <ComboBox fx:id="CmbBoxEmp" layoutX="98.0" layoutY="73.0" onAction="#ClickcmbEmployees" prefWidth="150.0" />
-      <Label layoutX="26.0" layoutY="78.0" text="Empleado" underline="true" />
+      <ComboBox fx:id="CmbBoxEmp" layoutX="236.0" layoutY="48.0" onAction="#ClickcmbEmployees" prefWidth="150.0" />
+      <Label fx:id="TitleLabel" layoutX="107.0" layoutY="53.0" text="Empleado" underline="true" />
       <Button fx:id="ButtonSalir" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Salir" text="&lt;- Salir" />
-      <Button fx:id="ResetButton" layoutX="260.0" layoutY="74.0" mnemonicParsing="false" onAction="#initialize" text="Borrar Seleccion" />
+      <Button fx:id="ResetButton" layoutX="423.0" layoutY="53.0" mnemonicParsing="false" onAction="#initialize" text="Borrar Seleccion" />
    </children>
 </AnchorPane>
